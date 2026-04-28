@@ -3,10 +3,15 @@
 
 <head>
 
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonte do Google - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="author" content="Generation Brasil">
     <meta name="description" content="Portfólio da Generation Brasil, 
                 desenvolvedor Full Stack especializado em criar experiências 
@@ -15,18 +20,26 @@
 
     <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
 
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Link para a Folha de Estilo da Página - CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
     <title>Portfólio Generation Brasil</title>
 </head>
 
+
 <body>
-    <!-- Cabeçalho da página (header) -->
+    <!-- Cabeçalho da Página (header) -->
     <header>
+
         <div class="menu-content">
 
-            <!-- Título -->
-            <a href="index.html" id="titulo"></a>
+            <!-- TÍTULO -->
+            <a href="index.html" id="titulo">Portfólio</a>
 
-            <!-- Menu -->
+            <!-- MENU -->
             <nav>
                 <ul class="menu-list">
                     <li><a href="#hero">Início</a></li>
@@ -35,85 +48,64 @@
                     <li><a href="#contact">Contato</a></li>
                 </ul>
             </nav>
+
         </div>
 
     </header>
 
     <!-- Seção Principal da Página (main) -->
     <main>
-        <!-- Seção de Boas Vindas -->
+
+        <!-- Seção de Boas vindas -->
         <section id="hero" class="section-container hero-container">
 
-            <!-- Boas Vindas -->
+            <!-- BOAS VINDAS -->
             <article class="hero-content">
 
                 <span>Olá, eu sou a Andressa</span>
-                <h1>Desenvolvedor Full Stack</h1>
-                <p>Transformo ideias em código e crio experiências digitais incríveis.</p>
+                <h1>Desenvolvedora Full Stack</h1>
+                <p>Construindo soluções que se movem com o mundo.</p>
 
                 <div class="buttons-container">
-                    <a href="#contact">Entre em Contato</a>
-                    <a href="about" class="botao-outline">Saiba Mais...</a>
+                    <a href="#contact" class="botao">Entre em Contato</a>
+                    <a href="#about" class="botao-outline">Saiba Mais...</a>
                 </div>
 
             </article>
 
-            <!-- Imagem -->
+            <!-- IMAGEM -->
             <figure class="hero-image">
-                <img src="assets/img/foto_dev_woman.svg" alt="Foto do Autor." class="float-animation">
+                <img src="./assets/img/foto_dev_man.svg" alt="Foto do autor." class="float-animation">
             </figure>
-
 
         </section>
 
-        <!-- Seção Sobre o Autor -->
+        <!-- Seção Sobre o autor -->
         <section id="about" class="section-container about-container">
 
             <figure class="about-image">
-                <img src="assets/img/avatar_dev_woman.svg" alt="Foto do Perfil">
+                <img src="./assets/img/avatar_dev_man.svg" alt="Foto do perfil">
             </figure>
 
             <article class="about-content">
                 <h2>Sobre mim</h2>
-                <p>
-                    Minha trajetória profissional teve início na área da enfermagem, onde desenvolvi competências
-                    essenciais como responsabilidade,
-                    empatia, trabalho em equipe, comunicação clara, organização,
-                    resiliência e tomada de decisão sob pressão.
-                    No momento estou em transição de carreira para a área de tecnologia,
-                    movida pela curiosidade e pelo desejo constante de aprender coisas novas.
-                    <br>
-                    Atualmente, estou em formação em Engenharia de Software pela Universidade Cruzeiro do Sul
-                    e construindo uma base sólida em frontend e backend por meio do bootcamp
-                    de JavaScript Full Stack da Generation Brasil.
-                    <br>
-                    Busco minha primeira oportunidade como desenvolvedora fullstack,
-                    com muita vontade de aprender, colaborar em equipe e evoluir continuamente,
-                    aplicando tanto minhas habilidades técnicas em desenvolvimento quanto as
-                    competências humanas adquiridas ao longo da minha experiência na área da saúde.
-                </p>
-                <p>
-                    Minha trajetória profissional teve início na área da enfermagem, onde desenvolvi competências
-                    essenciais como responsabilidade,
-                    empatia, trabalho em equipe, comunicação clara, organização,
-                    resiliência e tomada de decisão sob pressão.
-                    No momento estou em transição de carreira para a área de tecnologia,
-                    movida pela curiosidade e pelo desejo constante de aprender coisas novas.
-                    <br>
-                    Atualmente, estou em formação em Engenharia de Software pela Universidade Cruzeiro do Sul
-                    e construindo uma base sólida em frontend e backend por meio do bootcamp
-                    de JavaScript Full Stack da Generation Brasil.
-                    <br>
-                    Busco minha primeira oportunidade como desenvolvedora fullstack,
-                    com muita vontade de aprender, colaborar em equipe e evoluir continuamente,
-                    aplicando tanto minhas habilidades técnicas em desenvolvimento quanto as
-                    competências humanas adquiridas ao longo da minha experiência na área da saúde.
-                </p>
+                <p>Algumas ideias não nascem prontas.
+                    Elas começam pequenas, leves… quase como se estivessem procurando um caminho.
+                    Eu ajudo a guiá-las.</p>
+                <P>Sou desenvolvedora full stack e trabalho nesse espaço entre o imaginar e o construir — onde
+                    conceitos ganham forma, código ganha vida e tudo começa a se conectar.
+                    Cuido de cada etapa da jornada: da lógica invisível até o que o usuário vê e sente. Como uma entrega
+                    feita com cuidado, cada detalhe importa, cada parte precisa chegar no seu destino.</P>
+                <p> Uso JavaScript, TypeScript, React e Node.js como ferramentas,
+                    mas o que realmente faço é transformar ideias em algo real,
+                    com intenção, equilíbrio e um pouco de magia.</p>
 
+                <P> E, quando tudo se encaixa…</P>
+                <p>Você percebe que era exatamente assim que deveria ser. ✨</p>
                 <div class="about-buttons-data">
                     <div class="buttons-container">
                         <a href="#" target="_blank" class="botao">GitHub</a>
-                        <a href="#" target="_blank" class="botao-outline">Curriculo</a>
+                        <a href="#" target="_blank" class="botao-outline">Currículo</a>
                     </div>
 
                     <div class="data-container">
@@ -121,20 +113,17 @@
                             <span class="data-number">100</span>
                             <span class="data-label">Seguidores</span>
                         </div>
-
                         <div class="data-item">
                             <span class="data-number">10</span>
                             <span class="data-label">Repositórios</span>
                         </div>
-
                     </div>
-
                 </div>
             </article>
 
         </section>
 
-        <!-- Seção de Projetos do Autor -->
+        <!-- Seção Projetos do autor -->
         <section id="projects" class="section-container projects-container">
             <h2>Meus Projetos</h2>
 
@@ -144,35 +133,41 @@
                     <div class="swiper-slide">
 
                         <article class="project-card">
-                            <figure class="project-iamge">
-                                <img src="assets/icons/github.svg" alt="Ícone GitHub">
-                            </figure>
-
-                            <div class="project-tags">
-                                <span class="tag">GitHub</span>
+                            <div class="project-image">
+                                <img src="./assets/icons/languages/github.svg" alt="Ícone GitHub" />
                             </div>
 
-                            <div class="project-buttons">
-                                <a href="#" target="_blank" class="botao botao-sm">GitHub</a>
-                                <a href="#" target="_blank" class="botao-outline botao-sm">Deploy</a>
+                            <div class="project-content">
+                                <h3>Projeto Github</h3>
+                                <p>Projeto Desenvolvido no GitHub</p>
+                                <div class="project-tags">
+                                    <span class="tag">GitHub</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <a href="#" target="_blank" class="botao botao-sm">
+                                        GitHub
+                                    </a>
+                                    <a href="#" target="_blank" class="botao-outline botao-sm">
+                                        Deploy
+                                    </a>
+                                </div>
                             </div>
 
                         </article>
                     </div>
                 </div>
 
-                <!-- Botões de Navegação -->
-                <div class="swipper-button-next"></div>
+                <!-- Botões de navegação -->
+                <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
 
                 <!-- Paginação -->
                 <div class="swiper-pagination"></div>
-
             </div>
         </section>
 
-        <!-- Seção Formulário de Contato e Redes Sociais-->
-        <section id="contacts" class="section-container contact-container">
+        <!-- Seção Formulário de Contato e Redes Sociais -->
+        <section id="contact" class="section-container contact-container">
 
             <!-- REDES SOCIAIS -->
             <article class="contact-info">
@@ -213,6 +208,7 @@
 
                 <button class="botao" type="submit">Enviar Mensagem</button>
             </form>
+
         </section>
 
     </main>
@@ -221,6 +217,7 @@
     <footer>
         Desenvolvido por Andressa Andrade - 2026
     </footer>
+
 </body>
 
 </html>

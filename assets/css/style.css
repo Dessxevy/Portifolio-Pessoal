@@ -15,7 +15,21 @@
    VARIÁVEIS
 ======================================== */
 :root {
-    /* Bege (base principal do site) */
+    /* Vermelho principal (identidade do site) */
+    --red-50: #FFF1F2;
+    --red-100: #FFE4E6;
+    --red-200: #FECACA;
+    --red-300: #FCA5A5;
+    --red-400: #F87171;
+    --red-500: #C94A55;
+    /* principal */
+    --red-600: #A63A43;
+    /* hover */
+    --red-700: #8B2F36;
+    --red-800: #6F2329;
+    --red-900: #4A1519;
+
+    /* Bege (base do site) */
     --bege-50: #FFF9F2;
     --bege-100: #FDF1E4;
     --bege-200: #F4E3C1;
@@ -27,18 +41,6 @@
     --bege-800: #6B4F3A;
     --bege-900: #4A372A;
 
-    /* Vermelho (destaque principal) */
-    --red-50: #FFF1F1;
-    --red-100: #FFE0E0;
-    --red-200: #F5B5B5;
-    --red-300: #EB8A8A;
-    --red-400: #D94F4F;
-    --red-500: #C43C3C;
-    --red-600: #A63A3A;
-    --red-700: #7F2B2B;
-    --red-800: #5C1F1F;
-    --red-900: #3A1313;
-
     /* Neutros */
     --gray-200: #EDE6DD;
     --gray-400: #6B625B;
@@ -46,12 +48,12 @@
     --white: #FFFDF9;
 
     /* Estados */
-    --error: #C43C3C;
+    --error: var(--red-600);
 
-    /* Sombras (mais quentes) */
-    --shadow-sm: 0 0.25rem 0.5rem rgba(139, 94, 60, 0.08);
-    --shadow-md: 0 0.25rem 0.75rem rgba(139, 94, 60, 0.18);
-    --shadow-lg: 0 0.5rem 1.5rem rgba(139, 94, 60, 0.15);
+    /* Sombras (agora puxando pro vermelho) */
+    --shadow-sm: 0 0.25rem 0.5rem rgba(201, 74, 85, 0.08);
+    --shadow-md: 0 0.25rem 0.75rem rgba(201, 74, 85, 0.18);
+    --shadow-lg: 0 0.5rem 1.5rem rgba(201, 74, 85, 0.22);
 
     /* Espaçamentos */
     --spacing-xs: 0.5rem;
@@ -91,9 +93,9 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: var(--white);
+    background-color: var(--bg-main);
     line-height: 1.6;
-    color: var(--black);
+    color: var(--text-main);
 }
 
 main {
@@ -136,28 +138,28 @@ main {
 
 /* Botão preenchido (primário) */
 .botao {
-    border-color: var(--bege-500);
-    background-color: var(--bege-500);
+    border-color: var(--red-500);
+    background-color: var(--red-500);
     color: var(--white);
 }
 
 .botao:hover {
-    border-color: var(--bege-600);
-    background-color: var(--bege-800);
+    border-color: var(--red-600);
+    background-color: var(--red-600);
     box-shadow: var(--shadow-md);
     transform: translateY(-0.25rem);
 }
 
 /* Botão outline (secundário) */
 .botao-outline {
-    border-color: var(--bege-500);
+    border-color: var(--red-500);
+    color: var(--red-500);
     background-color: transparent;
-    color: var(--bege-500);
+    color: var(--red-500);
 }
 
 .botao-outline:hover {
-    border-color: var(--bege-500);
-    background-color: var(--bege-500);
+    background-color: var(--red-500);
     color: var(--white);
     transform: translateY(-0.25rem);
 }
@@ -181,9 +183,9 @@ header {
     z-index: 1000;
     width: 100%;
     height: 5rem;
-    border-bottom: var(--spacing-xs) solid var(--gray-200);
-    background-color: var(--bege-800);
-    box-shadow: var(--shadow-sm);
+    background-color: var(--red-600);
+    border-bottom: 1px solid var(--red-300);
+    box-shadow: var(--shadow-sm)
 }
 
 header a {
@@ -193,7 +195,7 @@ header a {
 }
 
 header a:hover {
-    color: var(--bege-100);
+    color: var(--red-100);
 }
 
 #titulo {
@@ -241,11 +243,13 @@ header a:hover {
 .hero-content span {
     font-size: var(--text-xl);
     font-weight: 700;
+    color: var(--bege-900)
 }
 
 .hero-content h1 {
     font-size: var(--text-3xl);
     font-weight: 700;
+    color: var(--bege-900)
 }
 
 .hero-content p,
@@ -293,7 +297,7 @@ header a:hover {
     gap: var(--spacing-2xl);
     margin: var(--spacing-2xl) auto;
     border-radius: var(--radius-lg);
-    background-color: var(--gray-200);
+    background-color: var(--bg-soft);
 }
 
 .about-image {
@@ -302,7 +306,7 @@ header a:hover {
 
 .about-image img {
     width: 100%;
-    border: 0.35rem solid var(--bege-500);
+    border: 0.35rem solid var(--red-500);
     border-radius: var(--radius-full);
     box-shadow: var(--shadow-lg);
 }
@@ -313,7 +317,7 @@ header a:hover {
     margin-bottom: var(--spacing-md);
     font-size: var(--text-3xl);
     font-weight: 700;
-    color: var(--bege-800);
+    color: var(--red-600);
 }
 
 .about-content p {
@@ -349,7 +353,7 @@ header a:hover {
     font-size: var(--text-xl);
     font-weight: 700;
     text-align: center;
-    color: var(--bege-500);
+    color: var(--red-500);
 }
 
 .data-label {
@@ -380,7 +384,7 @@ header a:hover {
     flex-direction: column;
     width: 100%;
     height: 100%;
-    border: 0.15rem solid var(--gray-200);
+    border: 0.15rem solid var(--red-100);
     border-radius: var(--radius-lg);
     background-color: var(--white);
     box-shadow: var(--shadow-sm);
@@ -398,7 +402,7 @@ header a:hover {
     justify-content: center;
     width: 100%;
     height: 10rem;
-    background: linear-gradient(135deg, var(--bege-50) 0%, var(--bege-100) 100%);
+    background: linear-gradient(135deg, var(--red-100) 0%, var(--bg-card) 100%);
 }
 
 .project-image img {
@@ -422,6 +426,7 @@ header a:hover {
     margin-bottom: 0.75rem;
     font-size: var(--text-lg);
     font-weight: 700;
+    color: var(--red-800);
 }
 
 .project-content p {
@@ -441,10 +446,10 @@ header a:hover {
 .tag {
     padding: 0.375rem 0.75rem;
     border-radius: var(--radius-sm);
-    background-color: var(--bege-100);
+    background-color: var(--red-100);
     font-size: var(--text-sm);
     font-weight: 600;
-    color: var(--bege-800);
+    color: var(--red-800);
 }
 
 /* Container - Botões do Card */
@@ -478,12 +483,12 @@ header a:hover {
 .swiper-button-next:after,
 .swiper-button-prev:after {
     font-size: var(--text-lg);
-    color: var(--bege-500);
+    color: var(--red-500);
 }
 
 .swiper-button-next:hover:after,
 .swiper-button-prev:hover:after {
-    color: var(--bege-800);
+    color: var(--red-800);
 }
 
 /* Indicadores de paginação */
@@ -497,7 +502,7 @@ header a:hover {
 .swiper-pagination-bullet-active {
     width: var(--spacing-lg);
     border-radius: var(--radius-sm);
-    background-color: var(--bege-500);
+    background-color: var(--red-500);
 }
 
 /* ========================================
@@ -528,19 +533,29 @@ header a:hover {
     width: 5rem;
     height: 5rem;
     padding: 0.75rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     border-radius: var(--radius-md);
     transition: var(--transition-default);
 }
 
 .social-icon img {
     width: 100%;
-    filter: brightness(0) saturate(100%);
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    filter: none;
     transition: filter 0.3s ease;
 }
 
 .social-icon:hover img {
-    filter: brightness(0) saturate(100%) invert(42%) sepia(93%) saturate(1352%) hue-rotate(243deg) brightness(79%) contrast(91%);
+    filter: brightness(0.85);
 }
+
+
 
 /* Formulário */
 form {
@@ -552,6 +567,7 @@ form {
 form label {
     font-size: var(--text-base);
     font-weight: 600;
+    color: var(--red-600)
 }
 
 form input,
@@ -567,7 +583,7 @@ form textarea {
 
 form input:focus,
 form textarea:focus {
-    border-color: var(--bege-500);
+    border-color: var(--red-500);
     outline: none;
 }
 
@@ -587,7 +603,7 @@ form span {
 ======================================== */
 footer {
     padding: 2.5rem;
-    background: linear-gradient(to right, var(--bege-500), var(--bege-800));
+    background: linear-gradient(to right, var(--red-500), var(--red-800));
     font-weight: 600;
     text-align: center;
     color: var(--white);
@@ -618,7 +634,7 @@ footer {
 .success-content h1 {
     font-size: var(--text-3xl);
     font-weight: 700;
-    color: var(--bege-800);
+    color: var(--red-800);
 }
 
 .success-content h2 {
@@ -633,7 +649,7 @@ footer {
     width: 7.5rem;
     height: 7.5rem;
     border-radius: var(--radius-full);
-    background-color: var(--bege-100);
+    background-color: var(--red-100);
 }
 
 .success-icon img {

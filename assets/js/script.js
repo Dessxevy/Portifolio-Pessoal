@@ -88,20 +88,20 @@ async function getProjectsGithub() {
 
         // Objeto contendo a lista de logos das linguagens
         const linguagens = {
-            JavaScript: "../assets/icons/javascript.svg",
-            TypeScript: "../assets/icons/typescript.svg",
-            Python: "../assets/icons/python.svg",
-            Java: "../assets/icons/java.svg",
-            HTML: "../assets/icons/html.svg",
-            CSS: "../assets/icons/css.svg",
-            PHP: "../assets/icons/php.svg",
-            "C#": "../assets/icons/csharp.svg",
-            Go: "../assets/icons/go.svg",
-            Kotlin: "../assets/icons/kotlin.svg",
-            Swift: "../assets/icons/swift.svg",
-            C: "../assets/icons/c.svg",
-            "C++": "../assets/icons/cpp.svg",
-            GitHub: "../assets/icons/github.svg"
+            JavaScript: "assets/icons/javascript.svg",
+            TypeScript: "assets/icons/typescript.svg",
+            Python: "assets/icons/python.svg",
+            Java: "assets/icons/java.svg",
+            HTML: "assets/icons/html.svg",
+            CSS: "assets/icons/css.svg",
+            PHP: "assets/icons/php.svg",
+            "C#": "assets/icons/csharp.svg",
+            Go: "assets/icons/go.svg",
+            Kotlin: "assets/icons/kotlin.svg",
+            Swift: "assets/icons/swift.svg",
+            C: "assets/icons/c.svg",
+            "C++": "assets/icons/cpp.svg",
+            GitHub: "assets/icons/github.svg"
         };
 
         repositorios.forEach(repositorio => {
